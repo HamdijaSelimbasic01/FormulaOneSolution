@@ -16,6 +16,7 @@ namespace FormulaOneDll
 {
     public class DbTools
     {
+        public const string pathname = @"C:\Users\h.selimbasic.0518\Desktop\FormulaOneSolution\ClientJS";
         /*
         public void createCountriesWithSmo()
         {

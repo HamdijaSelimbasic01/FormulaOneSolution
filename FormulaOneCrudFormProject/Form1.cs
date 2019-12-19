@@ -14,6 +14,7 @@ namespace FormulaOneCrudFormProject
 {
     public partial class FormMain : Form
     {
+        public const string pathname = @"C:\Users\h.selimbasic.0518\Desktop\FormulaOneSolution\ClientJS";
         DbTools db;
         BindingList<Team> teams;
 
