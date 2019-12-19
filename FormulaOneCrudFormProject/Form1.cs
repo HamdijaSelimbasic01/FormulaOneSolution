@@ -61,7 +61,19 @@ namespace FormulaOneCrudFormProject
             {
                 MessageBox.Show("Esportazione fallita");
             }
-            DbTools.SerializeToJson(teams, @".\Teams.json");
+        }
+
+        private void btnExportCSV_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DbTools.SerializeToCsv(teams, @".\Teams.csv");
+                MessageBox.Show("Esportazione completata");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Esportazione fallita");
+            }
         }
     }
 }
