@@ -49,5 +49,19 @@ namespace FormulaOneCrudFormProject
 
             //MessageBox.Show(team);
         }
+
+        private void btnExportJSON_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DbTools.SerializeToJson(teams, @".\Teams.json");
+                MessageBox.Show("Esportazione completata");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Esportazione fallita");
+            }
+            DbTools.SerializeToJson(teams, @".\Teams.json");
+        }
     }
 }

@@ -60,6 +60,8 @@
             this.ToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.tabPageDriver = new System.Windows.Forms.TabPage();
             this.tabPageServices = new System.Windows.Forms.TabPage();
+            this.btnExportCSV = new System.Windows.Forms.Button();
+            this.btnExportJSON = new System.Windows.Forms.Button();
             this.tabControlMain.SuspendLayout();
             this.tabPageTeam.SuspendLayout();
             this.toolStrip1.SuspendLayout();
@@ -79,6 +81,8 @@
             // 
             // tabPageTeam
             // 
+            this.tabPageTeam.Controls.Add(this.btnExportJSON);
+            this.tabPageTeam.Controls.Add(this.btnExportCSV);
             this.tabPageTeam.Controls.Add(this.txtName);
             this.tabPageTeam.Controls.Add(this.label9);
             this.tabPageTeam.Controls.Add(this.txtID);
@@ -232,7 +236,7 @@
             // 
             // btnTest
             // 
-            this.btnTest.Location = new System.Drawing.Point(693, 3);
+            this.btnTest.Location = new System.Drawing.Point(213, 3);
             this.btnTest.Name = "btnTest";
             this.btnTest.Size = new System.Drawing.Size(75, 23);
             this.btnTest.TabIndex = 2;
@@ -370,6 +374,25 @@
             this.tabPageServices.Text = "-- Services --";
             this.tabPageServices.UseVisualStyleBackColor = true;
             // 
+            // btnExportCSV
+            // 
+            this.btnExportCSV.Location = new System.Drawing.Point(838, 3);
+            this.btnExportCSV.Name = "btnExportCSV";
+            this.btnExportCSV.Size = new System.Drawing.Size(75, 23);
+            this.btnExportCSV.TabIndex = 22;
+            this.btnExportCSV.Text = "Export CSV";
+            this.btnExportCSV.UseVisualStyleBackColor = true;
+            // 
+            // btnExportJSON
+            // 
+            this.btnExportJSON.Location = new System.Drawing.Point(748, 3);
+            this.btnExportJSON.Name = "btnExportJSON";
+            this.btnExportJSON.Size = new System.Drawing.Size(84, 23);
+            this.btnExportJSON.TabIndex = 23;
+            this.btnExportJSON.Text = "Export JSON";
+            this.btnExportJSON.UseVisualStyleBackColor = true;
+            this.btnExportJSON.Click += new System.EventHandler(this.btnExportJSON_Click);
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -422,6 +445,8 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txtID;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button btnExportJSON;
+        private System.Windows.Forms.Button btnExportCSV;
     }
 }
 
