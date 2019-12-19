@@ -73,6 +73,7 @@ namespace FormulaOneCrudFormProject
             catch (Exception)
             {
                 MessageBox.Show("Esportazione fallita");
+               
             }
         }
     }
